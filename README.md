@@ -10,12 +10,14 @@ MerHost, Windows için geliştirilmiş, performans odaklı bir localhost sunucu 
 - 🎯 **Virtual Hosts** - Manuel domain oluşturma
 - ⚙️ **PHP Ayarları** - Hızlı PHP yapılandırma ayarları
 - 🎨 **Modern UI** - Karanlık temalı modern arayüz
-- 🔌 **Sistem Türayi** - Arka planda çalışma desteği
+- 🔌 **Sistem Tray** - Arka planda çalışma desteği
+
 ## Ekran Görüntüleri
 
 ![Ana Ekran](screenshot(1).png)
 
 ![PHP Ayarları](screenshot(6).png)
+
 ## Kurulum
 
 1. `MerHost-Setup-1.0.0.exe` dosyasını indirin
