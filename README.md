@@ -14,9 +14,9 @@ MerHost, Windows için geliştirilmiş, performans odaklı bir localhost sunucu 
 
 ## Ekran Görüntüleri
 
-![Ana Ekran](screenshot%(1).png)
+![Ana Ekran](./screenshot (1).png)
 
-![PHP Ayarları](screenshot%(6).png)
+![PHP Ayarları](./screenshot (6).png)
 
 ## Kurulum
 
