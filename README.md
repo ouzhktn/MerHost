@@ -1,6 +1,6 @@
 # MerHost - Fast Localhost Server
 
-MerHost, Windows için geliştirilmiş, performans odaklı bir localhost sunucu çözümüdür. Nginx, PHP-FPM ve MariaDB'yi tek bir uygulamada birleştirir.
+MerHost, Windows için geliştirilmiş, performans odaklı bir localhost sunucu çözümüdür. Nginx, PHP-FPM, MariaDB ve Node.js'yi tek bir uygulamada birleştirir.
 
 ## Özellikler
 
@@ -11,16 +11,16 @@ MerHost, Windows için geliştirilmiş, performans odaklı bir localhost sunucu 
 - ⚙️ **PHP Ayarları** - Hızlı PHP yapılandırma ayarları
 - 🎨 **Modern UI** - Karanlık temalı modern arayüz
 - 🔌 **Sistem Tray** - Arka planda çalışma desteği
+- 🟢 **Node.js Desteği** - Local Node.js geliştirme
+- 🔐 **Node.js + SSL** - Node.js projeleri için HTTPS desteği
 
 ## Ekran Görüntüleri
 
-![Ana Ekran](./Ana-ekran.png)
-
-![PHP Ayarları](./Php-ayarlari.png)
+![Ana Ekran](Screenshot-G.png)
 
 ## Kurulum
 
-1. `MerHost-Setup-1.0.0.exe` dosyasını indirin
+1. `MerHost-Setup-1.1.0.exe` dosyasını indirin
 2. Kurulumu çalıştırın
 3. Uygulamayı başlatın
 
@@ -31,31 +31,44 @@ MerHost, Windows için geliştirilmiş, performans odaklı bir localhost sunucu 
 
 ## Kullanım
 
-1. **Sunucuyu Başlat** - Tüm servisleri (Nginx, PHP, MySQL) tek tıkla başlatır
-2. **Domain Oluştur** - Yeni bir proje için domain oluşturun
-3. **Proje Klasörü** - `www` klasörüne projelerinizi ekleyin
+### Sunucuyu Başlat
+Tüm servisleri (Nginx, PHP, MySQL) tek tıkla başlatır
+
+### Domain Oluştur
+Yeni bir proje için domain oluşturun - Otomatik SSL ile
+
+### Node.js Projeleri
+- Proje Seç ile Node.js projenizi seçin
+- npm install ile bağımlılıkları yükleyin
+- npm start ile projeyi çalıştırın
+- Domain oluştururken "Node.js Projesi" seçeneğini işaretleyin
 
 ## Varsayılan Portlar
 
-- HTTP: 80
-- HTTPS: 443
-- MySQL: 3306
-- PHP-FPM: 9000
+| Servis | Port |
+|--------|------|
+| HTTP | 80 |
+| HTTPS | 443 |
+| MySQL | 3306 |
+| PHP-FPM | 9000 |
+| Node.js | 3000 |
 
 ## PHP Hızlı Ayarlar
 
-- `upload_max_filesize` - Dosya yükleme limiti
-- `post_max_size` - POST veri limiti
-- `max_execution_time` - Max çalışma süresi
-- `memory_limit` - Bellek limiti
-- `xdebug` - Xdebug eklentisi
+- upload_max_filesize - Dosya yükleme limiti
+- post_max_size - POST veri limiti
+- max_execution_time - Max çalışma süresi
+- memory_limit - Bellek limiti
+- xdebug - Xdebug eklentisi
 
 ## www Klasörü Yapısı
 
 ```
 www/
-├── proje1/       # proje1.test
-├── proje2/       # proje2.test
+├── proje1/           # proje1.test
+├── proje2/           # proje2.test  
+├── node-projects/    # Node.js projeleri
+│   └── myapp/       # myapp.test:3000
 └── ...
 ```
 
@@ -65,8 +78,8 @@ MIT License
 
 ## Yazar
 
-**Kingofa.com**
+[Kingofa.com](https://kingofa.com)
 
 ---
 
-MerHost - Kendi localhost sunucun, kendi kuralların!
+**MerHost** - Kendi localhost sunucun, kendi kuralların!
