@@ -1,0 +1,12 @@
+bin/
+obj/
+publish-*/
+Biten ve yedek Versiyonlar Klasörü/
+*.zip
+*.exe
+*.dll
+.vs/
+*.user
+*.suo
+packages/
+testapp/
